@@ -1,0 +1,27 @@
+﻿@model DemoApp.Models.Model
+@{
+    ViewBag.Title = "Murano ASP.NET MVC4 Demo";
+}
+<h2>
+    Murano ASP.NET MVC4 Demo</h2>
+<fieldset>
+    <legend>Info</legend>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.MachineName):
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MachineName)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.AppPool):
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AppPool)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.IPs):
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IPs)
+    </div>
+</fieldset>
